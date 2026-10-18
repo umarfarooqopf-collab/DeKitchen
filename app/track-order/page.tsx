@@ -125,10 +125,10 @@ function TrackOrderContent() {
                 <span className="text-xl sm:text-2xl font-black text-white font-mono">{order.id}</span>
                 <span
                   className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${order.status === 'delivered'
-                    ? 'bg-green-500/20 text-green-400 border border-green-500/40'
-                    : order.status === 'cancelled'
-                      ? 'bg-red-500/20 text-red-400 border border-red-500/40'
-                      : 'bg-primary/20 text-primary border border-primary/40 animate-pulse'
+                      ? 'bg-green-500/20 text-green-400 border border-green-500/40'
+                      : order.status === 'cancelled'
+                        ? 'bg-red-500/20 text-red-400 border border-red-500/40'
+                        : 'bg-primary/20 text-primary border border-primary/40 animate-pulse'
                     }`}
                 >
                   {order.status.replace(/_/g, ' ')}
@@ -261,5 +261,19 @@ function TrackOrderContent() {
       </div>
 
     </div>
+  );
+}
+
+export default function TrackOrderPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="max-w-4xl mx-auto px-4 py-10 text-center text-gray-400 text-sm">
+          Loading...
+        </div>
+      }
+    >
+      <TrackOrderContent />
+    </Suspense>
   );
 }
