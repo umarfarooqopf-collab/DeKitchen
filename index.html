@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Kitchen - Gourmet Fast Food & Restaurant</title>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS File Link  -->
+    <link rel="stylesheet" href="css/style.css?v=3">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#" class="logo">De Kitchen <i class="fas fa-utensils"></i></a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#book">book</a>
+        </nav>
+
+        <div class="header-icons">
+            <div id="cart-btn" class="fas fa-shopping-cart">
+                <span class="cart-badge">0</span>
+            </div>
+            <a href="#book" class="btn book-btn">book a table</a>
+        </div>
+    </header>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>taste the premium gourmet difference</h3>
+                <a href="#menu" class="btn">explore menu</a>
+            </div>
+
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" class="main-home-image" alt="Gourmet Burger">
+            </div>
+        </div>
+
+        <div class="image-slider">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Gourmet Burger">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Cheesy Pizza">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" alt="Crispy Fries">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h1 class="heading">about us <span>why choose us</span></h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Kitchen Chef">
+            </div>
+
+            <div class="content">
+                <h3 class="title">what makes our food special!</h3>
+                <p>At De Kitchen, we serve premium quality fast food crafted from fresh, locally-sourced ingredients. Our chefs prepare every burger, pizza, and side from scratch daily to guarantee the ultimate taste experience.</p>
+                <a href="#menu" class="btn">our menu</a>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-hamburger"></i>
+                        <h3>premium taste</h3>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-truck"></i>
+                        <h3>fast delivery</h3>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>fresh ingredients</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+        <h1 class="heading">our menu <span>popular choice</span></h1>
+
+        <!-- Menu Filter Buttons -->
+        <div class="menu-filter">
+            <button class="filter-btn active" data-target="all">All</button>
+            <button class="filter-btn" data-target="burgers">Burgers</button>
+            <button class="filter-btn" data-target="pizzas">Pizzas</button>
+            <button class="filter-btn" data-target="sides">Sides</button>
+            <button class="filter-btn" data-target="drinks">Drinks</button>
+            <button class="filter-btn" data-target="desserts">Desserts</button>
+        </div>
+
+        <div class="box-container">
+            <!-- Burgers -->
+            <div class="box" data-category="burgers">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="De Classic Burger">
+                <div class="content">
+                    <h3>De Classic Burger</h3>
+                    <p>Gourmet beef patty, aged cheddar, special sauce, fresh brioche.</p>
+                    <div class="price-btn-row">
+                        <span>$8.99</span>
+                        <button class="btn add-to-cart-btn" data-id="burger-1" data-name="De Classic Burger" data-price="8.99" data-img="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80">add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="burgers">
+                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" alt="Spicy Zinger Burger">
+                <div class="content">
+                    <h3>Spicy Zinger Burger</h3>
+                    <p>Crispy spicy chicken breast, crunchy lettuce, seasoned mayo.</p>
+                    <div class="price-btn-row">
+                        <span>$7.99</span>
+                        <button class="btn add-to-cart-btn" data-id="burger-2" data-name="Spicy Zinger Burger" data-price="7.99" data-img="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80">add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizzas -->
+            <div class="box" data-category="pizzas">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Cheesy Pepperoni Pizza">
+                <div class="content">
+                    <h3>Cheesy Pepperoni</h3>
+                    <p>Rich marinara sauce, double pepperoni, premium mozzarella cheese.</p>
+                    <div class="price-btn-row">
+                        <span>$12.99</span>
+                        <button class="btn add-to-cart-btn" data-id="pizza-1" data-name="Cheesy Pepperoni" data-price="12.99" data-img="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80">add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="pizzas">
+                <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=600&q=80" alt="Gourmet Margherita Pizza">
+                <div class="content">
+                    <h3>Gourmet Margherita</h3>
+                    <p>Fresh buffalo mozzarella, Roma tomatoes, extra virgin olive oil, sweet basil.</p>
+                    <div class="price-btn-row">
+                        <span>$10.99</span>
+                        <button class="btn add-to-cart-btn" data-id="pizza-2" data-name="Gourmet Margherita" data-price="10.99" data-img="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=600&q=80">add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sides -->
+            <div class="box" data-category="sides">
+                <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" alt="Loaded BBQ Fries">
+                <div class="content">
+                    <h3>Loaded BBQ Fries</h3>
+                    <p>Crispy dynamic fries topped with melted cheddar, smoky BBQ sauce.</p>
+                    <div class="price-btn-row">
+                        <span>$5.99</span>
+                        <button class="btn add-to-cart-btn" data-id="sides-1" data-name="Loaded BBQ Fries" data-price="5.99" data-img="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80">add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="sides">
+                <img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=600&q=80" alt="Crispy Spicy Wings">
+                <div class="content">
+                    <h3>Crispy Spicy Wings</h3>
+                    <p>6 pieces of golden crunchy chicken wings served with ranch dip.</p>
+                    <div class="price-btn-row">
+                        <span>$7.99</span>
+                        <button class="btn add-to-cart-btn" data-id="sides-2" data-name="Crispy Spicy Wings" data-price="7.99" data-img="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=600&q=80">add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="box" data-category="drinks">
+                <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" alt="Fresh Berry Mocktail">
+                <div class="content">
+                    <h3>Fresh Berry Mocktail</h3>
+                    <p>Refreshing blend of fresh berries, mint, lime, and sparkling soda.</p>
+                    <div class="price-btn-row">
+                        <span>$4.99</span>
+                        <button class="btn add-to-cart-btn" data-id="drinks-1" data-name="Fresh Berry Mocktail" data-price="4.99" data-img="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80">add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="drinks">
+                <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80" alt="Vanilla Caramel Shake">
+                <div class="content">
+                    <h3>Vanilla Caramel Shake</h3>
+                    <p>Thick vanilla bean milkshake swirled with salted caramel drizzle.</p>
+                    <div class="price-btn-row">
+                        <span>$4.50</span>
+                        <button class="btn add-to-cart-btn" data-id="drinks-2" data-name="Vanilla Caramel Shake" data-price="4.50" data-img="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80">add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="box" data-category="desserts">
+                <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&q=80" alt="Double Chocolate Brownie">
+                <div class="content">
+                    <h3>Double Fudge Brownie</h3>
+                    <p>Rich, warm chocolate fudge brownie served with caramel topping.</p>
+                    <div class="price-btn-row">
+                        <span>$5.50</span>
+                        <button class="btn add-to-cart-btn" data-id="desserts-1" data-name="Double Fudge Brownie" data-price="5.50" data-img="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&q=80">add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="desserts">
+                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Chocolate Lava Cake">
+                <div class="content">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Decadent chocolate cake with a warm, liquid chocolate molten center.</p>
+                    <div class="price-btn-row">
+                        <span>$6.50</span>
+                        <button class="btn add-to-cart-btn" data-id="desserts-2" data-name="Chocolate Lava Cake" data-price="6.50" data-img="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80">add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEW -->
+    <section class="review" id="review">
+        <h1 class="heading">reviews <span>what people say</span></h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-1.png" alt="Customer Profile">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>The burgers at De Kitchen are absolutely phenomenal! Perfectly cooked, extremely juicy, and the secret sauce is to die for. Highly recommended!</p>
+                    <h3>Zain Malik</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-2.png" alt="Customer Profile">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Outstanding customer service and fast delivery. The Loaded BBQ Fries arrived piping hot and crunchy. Will definitely order again!</p>
+                    <h3>Aisha Khan</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-3.png" alt="Customer Profile">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>De Kitchen has the best pepperoni pizza in town. Generous cheese and double toppings. Simply delicious!</p>
+                    <h3>Hamza Ali</h3>
+                    <span>satisfied client</span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- BOOK / CONTACT -->
+    <section class="book" id="book">
+        <h1 class="heading">booking <span>reserve a table</span></h1>
+
+        <form action="">
+            <input type="text" placeholder="Name" class="box">
+            <input type="email" placeholder="Email" class="box">
+            <input type="number" placeholder="Number" class="box">
+            <textarea name="" placeholder="Message" class="box" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> india</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> USA</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> france</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> africa</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> japan</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i> about</a>
+                <a href="#menu"><i class="fas fa-arrow-right"></i> menu</a>
+                <a href="#review"><i class="fas fa-arrow-right"></i> review</a>
+                <a href="#book"><i class="fas fa-arrow-right"></i> book</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="https://wa.me/923139833396" target="_blank"><i class="fab fa-whatsapp"></i> +92 313 9833396</a>
+                <a href="mailto:info@mediumminds.com" style="text-transform: none;"><i class="fas fa-envelope"></i> info@mediumminds.com</a>
+                <a href="https://www.mediumminds.com" target="_blank" style="text-transform: none;"><i class="fas fa-globe"></i> www.mediumminds.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Perú, Lima</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+            </div>
+        </div>
+
+        <div class="credit">developed by <span>umar farooq</span> | company: <span>mediumminds</span> | all rights reserved</div>
+    </section>
+
+    <!-- SHOPPING CART DRAWER -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>shopping cart</h3>
+            <div id="close-cart-btn" class="fas fa-times"></div>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Dynamically populated via JS -->
+            <p class="empty-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <form class="checkout-form" id="checkout-form">
+                <h3>delivery checkout</h3>
+                <input type="text" id="customer-name" placeholder="Your Name" required class="box">
+                <textarea id="delivery-address" placeholder="Delivery Address" required class="box" rows="3"></textarea>
+                <select id="payment-method" class="box">
+                    <option value="Cash on Delivery">Cash on Delivery</option>
+                </select>
+                <button type="submit" class="btn order-btn">Place Order via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/923139833396?text=Hi%20De%20Kitchen!%20I'd%20like%20to%20know%20more%20about%20your%20menu." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS File Link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

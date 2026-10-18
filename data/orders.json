@@ -1,0 +1,279 @@
+[
+  {
+    "id": "DK-60013",
+    "customer": {
+      "name": "Test Customer",
+      "phone": "+1 555 123 4567",
+      "email": "test@example.com",
+      "address": "123 Main Street",
+      "city": "Downtown",
+      "notes": ""
+    },
+    "orderType": "delivery",
+    "paymentMethod": "cash_on_delivery",
+    "paymentStatus": "pending",
+    "status": "pending",
+    "items": [
+      {
+        "cartItemId": "test-item-1",
+        "menuItemId": "burger-1",
+        "name": "De Classic Burger",
+        "basePrice": 8.99,
+        "unitPrice": 8.99,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80",
+        "category": "burgers",
+        "selectedAddOns": [],
+        "specialInstructions": ""
+      }
+    ],
+    "subtotal": 8.99,
+    "tax": 0.72,
+    "deliveryFee": 2.99,
+    "discount": 0,
+    "total": 12.7,
+    "estimatedDeliveryTime": "30-45 minutes",
+    "timeline": [
+      {
+        "status": "pending",
+        "timestamp": "2026-10-18T05:30:00.079Z",
+        "note": "Order submitted by customer"
+      }
+    ],
+    "createdAt": "2026-10-18T05:30:00.079Z",
+    "updatedAt": "2026-10-18T05:30:00.079Z"
+  },
+  {
+    "id": "DK-63933",
+    "customer": {
+      "name": "Umae",
+      "phone": "03129444445",
+      "email": "wwdfd@gfd.com",
+      "address": "tegtrsghtrdhb",
+      "city": "Downtownygfby",
+      "notes": "yhfbdfg"
+    },
+    "orderType": "delivery",
+    "paymentMethod": "cash_on_delivery",
+    "paymentStatus": "pending",
+    "status": "delivered",
+    "items": [
+      {
+        "cartItemId": "burger-1-Single Patty (180g)-none-",
+        "menuItemId": "burger-1",
+        "name": "De Classic Burger",
+        "basePrice": 8.99,
+        "unitPrice": 8.99,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80",
+        "category": "burgers",
+        "selectedVariation": {
+          "name": "Patty Size",
+          "selectedOption": "Single Patty (180g)",
+          "priceDelta": 0
+        },
+        "selectedAddOns": [],
+        "specialInstructions": ""
+      },
+      {
+        "cartItemId": "burger-2-Medium Spice-none-",
+        "menuItemId": "burger-2",
+        "name": "Spicy Zinger Burger",
+        "basePrice": 7.99,
+        "unitPrice": 7.99,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80",
+        "category": "burgers",
+        "selectedVariation": {
+          "name": "Spice Level",
+          "selectedOption": "Medium Spice",
+          "priceDelta": 0
+        },
+        "selectedAddOns": [],
+        "specialInstructions": ""
+      }
+    ],
+    "subtotal": 16.98,
+    "tax": 1.36,
+    "deliveryFee": 2.99,
+    "discount": 0,
+    "total": 21.33,
+    "estimatedDeliveryTime": "30-45 minutes",
+    "timeline": [
+      {
+        "status": "pending",
+        "timestamp": "2026-10-18T05:26:20.794Z",
+        "note": "Order submitted by customer"
+      },
+      {
+        "status": "confirmed",
+        "timestamp": "2026-10-18T05:26:37.160Z",
+        "note": "Status updated to confirmed"
+      },
+      {
+        "status": "preparing",
+        "timestamp": "2026-10-18T05:26:57.376Z",
+        "note": "Status updated to preparing"
+      },
+      {
+        "status": "out_for_delivery",
+        "timestamp": "2026-10-18T05:27:09.020Z",
+        "note": "Status updated to out for_delivery"
+      },
+      {
+        "status": "delivered",
+        "timestamp": "2026-10-18T05:27:23.213Z",
+        "note": "Status updated to delivered"
+      }
+    ],
+    "createdAt": "2026-10-18T05:26:20.794Z",
+    "updatedAt": "2026-10-18T05:27:23.214Z"
+  },
+  {
+    "id": "DK-78241",
+    "customer": {
+      "name": "Sarah Jenkins",
+      "phone": "+1 (555) 234-5678",
+      "email": "sarah.j@example.com",
+      "address": "452 Elm Street, Apt 3B",
+      "city": "Downtown",
+      "notes": "Please leave at apartment door."
+    },
+    "orderType": "delivery",
+    "paymentMethod": "cash_on_delivery",
+    "paymentStatus": "pending",
+    "status": "preparing",
+    "items": [
+      {
+        "cartItemId": "burger-1-default",
+        "menuItemId": "burger-1",
+        "name": "De Classic Burger",
+        "basePrice": 8.99,
+        "unitPrice": 10.79,
+        "quantity": 2,
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80",
+        "category": "burgers",
+        "selectedAddOns": [
+          {
+            "id": "c2",
+            "name": "Crispy Beef Bacon",
+            "price": 1.8
+          }
+        ]
+      },
+      {
+        "cartItemId": "sides-1-default",
+        "menuItemId": "sides-1",
+        "name": "Loaded BBQ Fries",
+        "basePrice": 5.99,
+        "unitPrice": 5.99,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80",
+        "category": "sides"
+      }
+    ],
+    "subtotal": 27.57,
+    "tax": 2.21,
+    "deliveryFee": 0,
+    "discount": 0,
+    "total": 29.78,
+    "estimatedDeliveryTime": "25-35 minutes",
+    "timeline": [
+      {
+        "status": "pending",
+        "timestamp": "2026-10-18T05:01:20.792Z",
+        "note": "Order placed by customer"
+      },
+      {
+        "status": "confirmed",
+        "timestamp": "2026-10-18T05:06:20.792Z",
+        "note": "Kitchen accepted the order"
+      },
+      {
+        "status": "preparing",
+        "timestamp": "2026-10-18T05:16:20.792Z",
+        "note": "Chef started preparation"
+      }
+    ],
+    "createdAt": "2026-10-18T05:01:20.792Z",
+    "updatedAt": "2026-10-18T05:16:20.792Z"
+  },
+  {
+    "id": "DK-39120",
+    "customer": {
+      "name": "Michael Chen",
+      "phone": "+1 (555) 987-6543",
+      "email": "m.chen@example.com",
+      "address": "88 Grand Avenue",
+      "city": "Westside"
+    },
+    "orderType": "delivery",
+    "paymentMethod": "card",
+    "paymentStatus": "paid",
+    "status": "delivered",
+    "items": [
+      {
+        "cartItemId": "pizza-1-default",
+        "menuItemId": "pizza-1",
+        "name": "Cheesy Pepperoni",
+        "basePrice": 12.99,
+        "unitPrice": 14.99,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80",
+        "category": "pizzas",
+        "selectedAddOns": [
+          {
+            "id": "p1",
+            "name": "Double Mozzarella",
+            "price": 2
+          }
+        ]
+      },
+      {
+        "cartItemId": "drinks-1-default",
+        "menuItemId": "drinks-1",
+        "name": "Fresh Berry Mocktail",
+        "basePrice": 4.99,
+        "unitPrice": 4.99,
+        "quantity": 2,
+        "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80",
+        "category": "drinks"
+      }
+    ],
+    "subtotal": 24.97,
+    "tax": 2,
+    "deliveryFee": 2.99,
+    "discount": 0,
+    "total": 29.96,
+    "estimatedDeliveryTime": "Delivered",
+    "timeline": [
+      {
+        "status": "pending",
+        "timestamp": "2026-10-18T04:06:20.792Z",
+        "note": "Order placed by customer"
+      },
+      {
+        "status": "confirmed",
+        "timestamp": "2026-10-18T04:11:20.792Z",
+        "note": "Order confirmed"
+      },
+      {
+        "status": "preparing",
+        "timestamp": "2026-10-18T04:21:20.792Z",
+        "note": "Food cooked to perfection"
+      },
+      {
+        "status": "out_for_delivery",
+        "timestamp": "2026-10-18T04:46:20.792Z",
+        "note": "Driver on the way"
+      },
+      {
+        "status": "delivered",
+        "timestamp": "2026-10-18T05:11:20.792Z",
+        "note": "Delivered safely"
+      }
+    ],
+    "createdAt": "2026-10-18T04:06:20.792Z",
+    "updatedAt": "2026-10-18T05:11:20.792Z"
+  }
+]
