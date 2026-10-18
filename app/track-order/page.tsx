@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import OrderTimeline from '@/components/OrderTimeline';
 import { Order } from '@/types';
@@ -17,7 +17,7 @@ import {
   ShoppingBag,
 } from 'lucide-react';
 
-export default function TrackOrderPage() {
+function TrackOrderContent() {
   const searchParams = useSearchParams();
   const initialId = searchParams.get('id') || '';
 
@@ -69,7 +69,7 @@ export default function TrackOrderPage() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
-      
+
       {/* Title */}
       <div className="text-center max-w-xl mx-auto space-y-3">
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
@@ -117,20 +117,19 @@ export default function TrackOrderPage() {
       {/* Order Status Display */}
       {order && (
         <div className="bg-dark-900 border border-dark-700/80 rounded-3xl p-6 sm:p-8 space-y-8 shadow-2xl animate-fadeIn">
-          
+
           {/* Header of Active Order */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-dark-800 pb-6">
             <div>
               <div className="flex items-center gap-3">
                 <span className="text-xl sm:text-2xl font-black text-white font-mono">{order.id}</span>
                 <span
-                  className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${
-                    order.status === 'delivered'
-                      ? 'bg-green-500/20 text-green-400 border border-green-500/40'
-                      : order.status === 'cancelled'
+                  className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${order.status === 'delivered'
+                    ? 'bg-green-500/20 text-green-400 border border-green-500/40'
+                    : order.status === 'cancelled'
                       ? 'bg-red-500/20 text-red-400 border border-red-500/40'
                       : 'bg-primary/20 text-primary border border-primary/40 animate-pulse'
-                  }`}
+                    }`}
                 >
                   {order.status.replace(/_/g, ' ')}
                 </span>
